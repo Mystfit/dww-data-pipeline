@@ -7,6 +7,9 @@
         "jade": "*",
         "markdown": "*",
         "neo4j": "*",
-        "forever": "*"
+        "forever": "*",
+        "passport": "*",
+        "passport-local": "*",
+        "connect-flash": "*"
     }
 }

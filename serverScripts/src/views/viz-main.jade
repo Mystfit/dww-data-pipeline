@@ -1,0 +1,40 @@
+extends layout
+
+block includes
+    script(src="//code.jquery.com/ui/1.10.4/jquery-ui.js")
+    script(src='https://www.google.com/jsapi?')
+    script(src='js/Chart.js')
+    script(src='js/functions.js')
+    script(src='js/timeControl.js')
+    script(src='js/uiElements.js') 
+    script(src='js/receiveData.js')
+    script(src='js/GEInit.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css')
+
+block content
+    div#map3d.fullsize
+    div#sideBar.fixed
+        div#timeWidget
+            button#rwButton
+            button#playButton
+            button#pauseButton
+            button#ffButton
+            button#viewRange
+            button#timeDisplay.unclickable
+            //- div#datePicker
+            div#slider
+        div#displayWidget
+            div#displayTabs
+                ul
+                    li
+                        a(id="studioTab" href="#studioDisplay") 
+                div#studioDisplay
+                    button#personIcon.unclickable
+                    div#densityBar
+                    canvas#roleChart
+        div#searchWidget
+            input#studioSelector
+            button#searchDisplay.unclickable
+    div#progressBar.fixed
+    button#sideBarToggle.fixed

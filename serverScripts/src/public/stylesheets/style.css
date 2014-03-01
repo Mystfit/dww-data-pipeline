@@ -1,0 +1,218 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+}
+
+.fullsize{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.unclickable{
+  pointer-events: none; 
+}
+
+.fixed{
+  position: fixed;
+}
+
+#sideBarToggle{
+  top: 1%;
+  left: 1%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+#sideBar{
+  top: 2.5%;
+  left: 2.5%;
+  width: 350px;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+}
+
+#timeWidget{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 25%;
+}
+
+#searchWidget{
+  position: absolute;
+  top:  90%;
+  left: 0%;
+  width: 100%;
+  height: 3%;
+}
+
+#displayWidget{
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  width: 100%;
+  height: 40%;
+}
+
+#displayTabs{
+  top: 0%;
+  left: 6.25%;
+  width: 87.5%;
+}
+
+#tabs-1{
+  background-color: rgb(175, 175, 175);
+  opacity: 0.8;
+}
+
+#studioDisplay{
+  width: 80%;
+  text-align: center;
+}
+
+#roleChart{
+  display: inline;
+  width: 100%;
+  height: 50%;
+  margin-left: 10%;
+}
+
+#personIcon{
+  top: 22px;
+  left: -110px;
+  width: 40px;
+  height: 0px;
+  padding-bottom: 20px;
+}
+
+#densityBar{
+  height: 20px;
+  width: 90%;
+  border-radius: 10px;
+  margin-left: 20%;
+}
+
+#studioSelector{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 68.75%;
+  height: 0%;
+  text-align: center;
+  font-family: "Helvetica", "Arial";
+  padding-bottom: 4.6875%;
+  padding-top: 4.6875%;
+  background-color: rgb(175, 175, 175);
+  border-style: none;
+  border-radius: 50px;
+  opacity: 0.8;
+}
+
+#searchDisplay{
+  top: 0%;
+  left: 6.25%;
+  width: 12.5%;
+  height: 0%;
+  padding-bottom: 12.5%;
+}
+
+#rwButton{
+  position: absolute;
+  top: 20%;
+  left: 6.25%;
+  width: 12.5%;
+  height: 0%;
+  padding-bottom: 12.5%;
+}
+
+#playButton{
+  position: absolute;
+  top: 20%;
+  left: 31.25%;
+  width: 12.5%;
+  height: 0%;
+  padding-bottom: 12.5%;
+}
+
+#pauseButton{
+  position: absolute;
+  top: 20%;
+  left: 31.25%;
+  width: 12.5%;
+  height: 0%;
+  padding-bottom: 12.5%;
+}
+
+#ffButton{
+  position: absolute;
+  top: 20%;
+  left: 56.25%;
+  width: 12.5%;
+  height: 0%;
+  padding-bottom: 12.5%;
+}
+
+#viewRange{
+  position: absolute;
+  top: 20%;
+  left: 81.25%;
+  width: 12.5%;
+  height: 0%;
+  padding-bottom: 12.5%;
+}
+
+#slider{
+  position: absolute;
+  top: 55%;
+  left: 6.25%;
+  width: 87.5%;
+  height: 3%;
+}
+
+#timeDisplay{
+  position: absolute;
+  top: 70%;
+  left: 6.25%;
+  width: 87.5%;
+  height: 20%;
+}
+
+#datePicker{
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  width: 87.5%;
+  height: 60%;
+/*  top: 100%;
+  left: 6.25%;
+  width: 87.5%;
+  height: 80%;*/
+}
+
+#progressBar{
+  top: 47.5%;
+  left: 25%;
+  width: 50%;
+  height: 5%;
+}
+
+div.ui-datepicker{
+  font-size: 60%;
+}
+
+.ui-tabs .ui-tabs-nav {
+    text-align: center;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    float: none !important;
+    display: inline-block;
+}
+
+
+

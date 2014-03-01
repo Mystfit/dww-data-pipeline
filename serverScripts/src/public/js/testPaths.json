@@ -1,0 +1,124 @@
+{
+    "people": [{
+        "id": "0003040",
+        "name": "Rick Sander",
+        "rels": [{
+            "imdbMovieId": "0116705",
+            "companySearch": "vifx",
+            "companyMatchRatio": 100,
+            "personRole": "3d animator",
+            "personMappedRole": "Animation",
+            "movieReleaseYear": 1996,
+            "matchedCompanyId": "0024117",
+            "matchedCompanyName": "VIFX"
+        }, {
+            "imdbMovieId": "0120461",
+            "companySearch": "vifx",
+            "companyMatchRatio": 100,
+            "personRole": "3d artist",
+            "personMappedRole": "Paint/Rotoscope",
+            "movieReleaseYear": 1997,
+            "matchedCompanyId": "0024117",
+            "matchedCompanyName": "VIFX"
+        }, {
+            "imdbMovieId": "0120338",
+            "companySearch": "vifx",
+            "companyMatchRatio": 100,
+            "personRole": "digital artist",
+            "personMappedRole": "Paint/Rotoscope",
+            "movieReleaseYear": 1997,
+            "matchedCompanyId": "0024117",
+            "matchedCompanyName": "VIFX"
+        }, {
+            "imdbMovieId": "0120902",
+            "companySearch": "blue sky/vifx",
+            "companyMatchRatio": 100,
+            "personRole": "3d digital artist",
+            "personMappedRole": "Paint/Rotoscope",
+            "movieReleaseYear": 1998,
+            "matchedCompanyId": "0040176",
+            "matchedCompanyName": "Blue Sky/VIFX"
+        }, {
+            "imdbMovieId": "0120844",
+            "companySearch": "blue sky/vifx",
+            "companyMatchRatio": 100,
+            "personRole": "digital effects",
+            "personMappedRole": "",
+            "movieReleaseYear": 1998,
+            "matchedCompanyId": "0040176",
+            "matchedCompanyName": "Blue Sky/VIFX"
+        }, {
+            "imdbMovieId": "0486576",
+            "companySearch": "weta digital",
+            "companyMatchRatio": 100,
+            "personRole": "lighting and effects team",
+            "personMappedRole": "",
+            "movieReleaseYear": 2007,
+            "matchedCompanyId": "0005031",
+            "matchedCompanyName": "Weta Digital"
+        }, {
+            "imdbMovieId": "0760329",
+            "companySearch": "weta digital",
+            "companyMatchRatio": 100,
+            "personRole": "lighting artist",
+            "personMappedRole": "Lighting",
+            "movieReleaseYear": 2007,
+            "matchedCompanyId": "0005031",
+            "matchedCompanyName": "Weta Digital"
+        }, {
+            "imdbMovieId": "0865554",
+            "companySearch": "gradient effects",
+            "companyMatchRatio": 100,
+            "personRole": "lighting supervisor",
+            "personMappedRole": "Lighting",
+            "movieReleaseYear": 2008,
+            "matchedCompanyId": "0407696",
+            "matchedCompanyName": "Gradient Effects"
+        }, {
+            "imdbMovieId": "0379865",
+            "companySearch": "cis hollywood",
+            "companyMatchRatio": 100,
+            "personRole": "lighter",
+            "personMappedRole": "Lighting",
+            "movieReleaseYear": 2008,
+            "matchedCompanyId": "0063107",
+            "matchedCompanyName": "CIS Hollywood"
+        }, {
+            "imdbMovieId": "0362478",
+            "companySearch": "gradient effects",
+            "companyMatchRatio": 100,
+            "personRole": "cg supervisor",
+            "personMappedRole": "",
+            "movieReleaseYear": 2009,
+            "matchedCompanyId": "0407696",
+            "matchedCompanyName": "Gradient Effects"
+        }, {
+            "imdbMovieId": "1058017",
+            "companySearch": "gradient fx",
+            "companyMatchRatio": 100,
+            "personRole": "cg supervisor",
+            "personMappedRole": "",
+            "movieReleaseYear": 2009,
+            "matchedCompanyId": "0377403",
+            "matchedCompanyName": "Gradient FX"
+        }, {
+            "imdbMovieId": "1596343",
+            "companySearch": "hoax films",
+            "companyMatchRatio": 100,
+            "personRole": "visual effects supervisor",
+            "personMappedRole": "Effects",
+            "movieReleaseYear": 2011,
+            "matchedCompanyId": "0338035",
+            "matchedCompanyName": "HOAX Films"
+        }, {
+            "imdbMovieId": "1748227",
+            "companySearch": "hoax films",
+            "companyMatchRatio": 100,
+            "personRole": "visual effects supervisor",
+            "personMappedRole": "Effects",
+            "movieReleaseYear": 2012,
+            "matchedCompanyId": "0338035",
+            "matchedCompanyName": "HOAX Films"
+        }]
+    }]
+}

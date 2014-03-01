@@ -10,6 +10,15 @@ var companyMapFile = "companyMap";
 var roleMapFile = "roleMap";
 
 
+/* 
+ * Main vizualizer
+ */
+exports.vizMain = function(req, res) {
+    res.render('viz-main.jade', {
+        title: 'DWW Data Visualisation'
+    });
+};
+
 /*
  * Raw data routes
  */
