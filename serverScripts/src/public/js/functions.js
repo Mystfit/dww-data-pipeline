@@ -9,7 +9,7 @@ var studios = {}; // the collection of all studios in this visualisation
 var hubs = {}; // the collection of all hubs in this visualisation
 var paths; // the collection of all generated paths (indexed by GE id) 
 var roles = []; // the array of all roles in the JSON data
-var selectedRoles = []; // the array of all roles that are currently displayed in the visualisation
+var selectedRoles = ["Lighting", "Animation", "Compositing", "Roto/Paint", "Effects"]; // the array of all roles that are currently displayed in the visualisation
 var selectedRoleColours = ["#FF9C98", "#A97EE8", "#8BE6FF", "#E2FFB1", "#E8C47E"]; // corresponding to the above, this array effectively maps roles to colours for UI purposes 
 var graphEmptyFill = "#E2EAE9"; // the colour to fill in empty space on the graph 
 var pathBuilder = new Worker('js/pathCreator.js'); // the worker instance to asynchronously perform path creation calculations
@@ -251,9 +251,6 @@ function importRoleData(dataSet) {
                 roles[roles.length] = role;
             }
         }
-    }
-    for (var i = 0; i < 5; i++) {
-        selectedRoles[i] = roles[i];
     }
 }
 
