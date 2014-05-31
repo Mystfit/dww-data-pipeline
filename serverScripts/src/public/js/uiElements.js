@@ -285,9 +285,9 @@ function generateRoleSelectors() {
     }
     //appropriate selectors 
     for (var i = 0; i < 5; i++) {
-        $('#roleSelectorSelect' + i + ' option[value=\'' + roles[i] + '\']').attr('selected', 'selected');
-        disableRole(roles[i], true, $('#roleSelectorSelect' + i));
-        $('#roleSelectorSelect' + i).css('background-color', getAssociatedRoleColor(roles[i]));
+        $('#roleSelectorSelect' + i + ' option[value=\'' + selectedRoles[i] + '\']').attr('selected', 'selected');
+        disableRole(selectedRoles[i], true, $('#roleSelectorSelect' + i));
+        $('#roleSelectorSelect' + i).css('background-color', getAssociatedRoleColor(selectedRoles[i]));
     }
 }
 
@@ -340,6 +340,7 @@ function getAssociatedRoleColor(role) {
 function animateSideBar(incoming) {
     if (incoming) {
         $('#sideBar').show('drop', 'slow');
+        $('#map3d').switchClass('expanded', 'reduced', 0, 'swing');
         setTimeout(function() {
             $('#timeWidget').show('drop', 'slow');
         }, 100);
@@ -362,6 +363,9 @@ function animateSideBar(incoming) {
         setTimeout(function() {
             $('#sideBar').hide('drop', 'slow');
         }, 700);
+        setTimeout(function() {
+            $('#map3d').switchClass('reduced', 'expanded', 0);
+        }, 900);
     }
 }
 

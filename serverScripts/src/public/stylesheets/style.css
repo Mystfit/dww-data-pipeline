@@ -3,11 +3,19 @@ body {
   background-color: black;
 }
 
-.fullsize{
-  position: absolute;
+.reduced{
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 75%;
+  margin-left: 25%;
+  height: 100%;
+}
+
+.expanded{
+  top: 0px;
+  left: 0px;
+  width: 95%;
+  margin-left: 5%;
   height: 100%;
 }
 
@@ -22,15 +30,16 @@ body {
 #sideBarToggle{
   top: 1%;
   left: 1%;
-  width: 40px;
-  height: 40px;
+  width: 2%;
+  height: 0%;
+  padding-bottom: 1%;
   border-radius: 100%;
 }
 
 #sideBar{
   top: 2.5%;
   left: 2.5%;
-  width: 350px;
+  width: 20%;
   height: 100%;
   margin: 0px 0px 0px 0px;
 }
