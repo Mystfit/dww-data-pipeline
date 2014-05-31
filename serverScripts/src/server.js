@@ -213,6 +213,7 @@ app.post('/login',
         console.log('Authentication successful');
 
         freegeoip.getLocation(req.ip, function(err, location) {
+            location.user = req.user.username;
             winston.log('info', location);
         });
 
