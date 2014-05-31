@@ -3,13 +3,15 @@
     "version": "0.0.1",
     "private": "false",
     "dependencies": {
-        "express": "*",
+        "express": "~3.4.8",
         "jade": "*",
         "markdown": "*",
         "neo4j": "*",
         "forever": "*",
         "passport": "*",
         "passport-local": "*",
-        "connect-flash": "*"
+        "connect-flash": "*",
+        "winston": "*",
+        "node-freegeoip": "*"
     }
 }

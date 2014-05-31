@@ -201,6 +201,7 @@ exports.getAllPeopleAsJson = function(callbackComplete, jumpsOnly, filterArgs) {
                         outJson['jumps'] = jumpList;
 
                         if (filterArgs['format'] == "csv") {
+                            console.log("!!!csv!!!!")
                             callbackComplete(csvString);
                         } else {
                             callbackComplete(outJson);
@@ -267,10 +268,6 @@ var FormatRels = function(peopleList, args) {
                         tempRels.push(person.rels[i - 1]);
                         if (p < 5) console.log("Incoming:", person.rels[i - 1][key]);
                         if (person.rels[i - 1][key].toLowerCase() == args['target'].toLowerCase()) console.log("!!!!!!!! Incoming is same as target!");
-                    }
-
-                    if (person['name'].toLowerCase() == "Matt Bouchard".toLowerCase()) {
-                        //console.log("!!!!");
                     }
                 } else if (args['dir'] == "out" || !args['dir']) {
                     if (p < 5) console.log("Checking", person.rels[i - 1][key].toLowerCase());

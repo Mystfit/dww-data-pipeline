@@ -9,7 +9,16 @@ var express = require('express'),
     app = express(),
     passport = require('passport'),
     LocalStrategy = require('passport-local').Strategy,
-    flash = require('connect-flash');
+    flash = require('connect-flash'),
+    winston = require('winston'),
+    freegeoip = require('node-freegeoip');
+
+
+//Setup logging
+winston.add(winston.transports.File, {
+    filename: 'access.log'
+});
+winston.remove(winston.transports.Console);
 
 //Setup authentication
 passport.use(new LocalStrategy(
@@ -118,7 +127,6 @@ passport.use(new LocalStrategy(
 //   login page.
 function ensureAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {
-        console.log("Logged in");
         return next();
     }
     console.log("Not logged in");
@@ -145,6 +153,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.enable('trust proxy');
 
 // development only
 if ('development' == app.get('env')) {
@@ -201,9 +210,28 @@ app.post('/login',
         failureFlash: true
     }),
     function(req, res) {
+        console.log('Authentication successful');
+
+        freegeoip.getLocation(req.ip, function(err, location) {
+            winston.log('info', location);
+        });
+
         res.redirect('/');
     }
 );
+// app.post('/login', function(req, res, next) {
+//     passport.authenticate('local', function(err, user, info) {
+//         console.log("here");
+//         if (user === false) {
+//             console.log("Auth fail");
+//         } else {
+//             console.log("Auth success");
+//             winston.log(req.ip);
+//             //res.redirect('/');
+//         }
+//     })(req, res, next);
+// });
+
 app.get('/logout', function(req, res) {
     req.logout();
     res.redirect('/');
